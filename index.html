@@ -12,56 +12,60 @@
 <body>
 	<form action="#" method="post" enctype="multipart/form-data">
 		<div>
-			<p>Имя</p>
+			<h4>Имя</h4>
 			<input placeholder="имя" tabindex="1" name="username" type="text">
 		</div>
 		<div>
-			<p>Пароль</p>
+			<h4>Пароль</h4>
 			<input tabindex="2" name="userpass" type="password">
 		</div>
 		<div>
-			<p>Телефон</p>
+			<h4>Телефон</h4>
 			<input tabindex="3" name="userphone" type="tel">
 		</div>
 		<div>
-			<p>Пол</p>
+			<h4>Пол</h4>
 			<div>
-				<input tabindex="4" checked type="radio" name="gender" value="male">Мужской
+				<input tabindex="4" checked type="radio" name="gender" value="male" id="check1"><label
+					for="check1">Мужской</label>
 			</div>
 			<div>
-				<input tabindex="4" type="radio" name="gender" value="female">Женский
+				<input tabindex="4" type="radio" name="gender" value="female" id="check2"><label
+					for="check2">Женский</label>
 			</div>
 		</div>
 		<div>
-			<p>Имущество</p>
+			<h4>Имущество</h4>
 			<div>
-				<input tabindex="5" checked type="checkbox" name="bike" value="yes">Велик
+				<input tabindex="5" type="checkbox" name="bike" value="yes" id="check3"> <label for="check3">Велик</label>
 			</div>
 			<div>
-				<input tabindex="6" type="checkbox" name="car" value="yes">Машина
+				<input tabindex="6" type="checkbox" name="car" value="yes" id="check4"> <label for="check4">Машина</label>
 			</div>
 			<div>
-				<input tabindex="7" disabled type="checkbox" name="house" value="yes">Дом
+				<input tabindex="7" disabled type="checkbox" name="house" value="yes" id="check5"> <label
+					for="check5">Дом</label>
 			</div>
+
 
 		</div>
 		<div>
-			<p>Дополнительная информация</p>
+			<h4>Дополнительная информация</h4>
 			<textarea tabindex="8" name="text"></textarea>
 		</div>
 		<div>
-			<p>Прикрепить фото</p>
+			<h4>Прикрепить фото</h4>
 			<input tabindex="9" type="file" name="userfoto">
 		</div>
 		<div>
-			<p>Любимый цвет</p>
+			<h4>Любимый цвет</h4>
 			<select tabindex="10" name="color">
 				<option value="red">Красный</option>
 				<option value="green">Зелёный</option>
 				<option selected value="yellow">Жёлтый</option>
 			</select>
 			<div>
-				<p>Действия</p>
+				<h4>Действия</h4>
 				<button tabindex="11" type="submit">Отправить</button>
 				<button tabindex="12" type="reset">Очистить</button>
 
